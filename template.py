@@ -19,12 +19,12 @@ files = [
     f'src/{project_name}/pipeline/__init__.py',
     f'src/{project_name}/entity/__init__.py',
     f'src/{project_name}/constants/__init__.py',
-    'config/congig.yaml',
+    'config/config.yaml',
     'params.yaml',
     'app.py',
     'main.py',
     'Dockerfile',
-    'requirememnts.txt',
+    'requirements.txt',
     'setup.py',
     'research/trials.ipynb'
 ]
@@ -35,7 +35,7 @@ for filepath in files:
 
     if filedir!= '':  # if file is not empty
         os.makedirs(filedir, exist_ok=True)
-        logging.info(f'creating directory:{filedir} for the ffile {filename}')
+        logging.info(f'creating directory:{filedir} for the file {filename}')
 
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
         with open(filepath,'w') as f:
