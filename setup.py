@@ -15,13 +15,12 @@ setuptools.setup(
     version=__version__,
     author=author_user_name,
     author_email=author_email,
-    description=' Tex summary NLP application',
-    long_description='text/markdon',
-    url=f'github.com/martinezreices/text_summarizer',
+    description='Text summary NLP application',
+    long_description='text/markdown',
+    url=f'https://github.com/martinezreices/text_summarizer',
     project_urls={
-        'bug tracker':f'github.com/martinezreices/text_summarizer/issues',
+        'Bug Tracker':f'https://github.com/martinezreices/text_summarizer/issues',
         },
-    package_dir=('','src'),
-    packages=setuptools.find_packages(where='src')
+    package_dir={"":"src"},
+    packages=setuptools.find_packages(where="src")
 )
-
