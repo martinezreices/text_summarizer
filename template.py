@@ -25,7 +25,7 @@ files = [
     'main.py',
     'Dockerfile',
     'requirememnts.txt',
-    'setup.py'
+    'setup.py',
     'research/trials.ipynb'
 ]
 
